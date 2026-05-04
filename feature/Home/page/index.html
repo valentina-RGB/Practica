@@ -1,15 +1,87 @@
 <!doctype html>
-<html lang="en">
-  <head>
+<html lang="es">
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../global/css/global.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <title>Incio</title>
-  </head>
-  <body>
-    <p>Chaoo</p>
-    <p>Bienvenido a la pagina de inicio</p>
-    <footer>
-      <p>Este es un fotter</p>
-    </footer>
-  </body>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <i class="bi bi-command icon"></i>
+        </div>
+        <div>
+            <i class="bi bi-person-circle icon icon-golden"></i>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="row-1 main-title">
+            <h1> Gestiona, organiza y potencia el deporte en tu institución.</h1>
+        </div>
+        <div class="row-2 search">
+            <input id="search" type="text" placeholder="Busca tu deporte favorito">
+            <label for="search"> <i class="bi bi-search icon icon-beige"></i></label>
+        </div>
+
+        <nav class="navbar">
+            <a class="item" href="#voleibol">Voleibol</a>
+            <a class="item" href="#baloncesto">Baloncesto</a>
+            <a class="item" href="#futbol">Fútbol</a>
+        </nav>
+
+        <div class="sections">
+             
+            <!-- VOLEIBOL -->
+            <h2 id="voleibol"  class="title-second"> Voleibol</h2>
+            <div class="section-items"> 
+
+                <div class="card">
+                <img src="../../global/img/volleyball.jpg" alt="Chica jugando voleibol">
+                <section>
+                    <p>Juega voleibol con nosotros</p>
+                </section>
+            </div>
+            <div class="card">
+                <img src="../../global/img/futbot-masculino.jpg" alt="Chica jugando voleibol">
+                <section>
+                    <p>Juega voleibol másculino con nosotros</p>
+                </section>
+            </div>
+            <div class="card">
+                <img src="../../global/img/voleibol-playa.jpg" alt="Chica jugando voleibol">
+                <section>
+                    <p>Juega voleibol playa con nosotros</p>
+                </section>
+            </div>
+            </div>
+            <!-- FUTBOL -->
+             <h2 class="title-second"> Fútbol Escolar</h2>
+             <div id="futbol"  class="section-items">
+                  <div class="card">
+                <img src="../../global/img/futbol.jpg" alt="Chica jugando voleibol">
+                <section>
+                    <p>Juega fúbol con nosotros</p>
+                </section>
+            </div>
+            <div class="card">
+                <img src="../../global/img/futbol-femenino.jpg" alt="Chica jugando voleibol">
+                <section>
+                    <p>Juega fútbol femenino</p>
+                </section>
+            </div>
+            <div class="card">
+                <img src="../../global/img/futbot-masculino.jpg" alt="Chica jugando voleibol">
+                <section>
+                    <p>Juega fútbol Másculino</p>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="home.js"></script>
+</body>
+
 </html>

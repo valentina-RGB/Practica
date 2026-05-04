@@ -1,1 +1,178 @@
-/* css global */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 8vh;
+    padding: 0 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #0c1015;
+}
+
+main {
+    flex: 1;
+    padding: 0 2rem;
+    background-color: #0c1015;
+}
+
+input {
+    outline: none;
+}
+
+.main-title {
+    color: beige;
+}
+
+.row-1 {
+    max-width: 50%;
+}
+
+
+/* SEARCH */
+.search {
+    display: flex;
+    position: relative;
+}
+
+.search input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: #C2B067;
+    background-color: #141a21ba;
+    transition: all 0.5s ease;
+}
+
+.search label {
+    position: absolute;
+    align-self: center;
+    right: 15px;
+}
+
+
+.search input:focus {
+    outline: none;
+    border: 1px solid #c2b06776;
+}
+
+/* ICONS */
+
+.icon {
+    font-size: 20px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.icon-golden {
+    color: #C2B067
+}
+
+.icon-beige {
+    color: beige;
+}
+
+
+/* NAVBAR */
+.navbar {
+    top: 0;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    padding: 20px;
+    background-color: #0c1015;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #5a5b5f;
+    position: relative;
+    padding-bottom: 10px;
+    transition: all 0.5s ease;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    background-color: #d18f67;
+    width: 5px;
+    height: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    bottom: 0;
+    opacity: 0;
+}
+
+.navbar a.active {
+    color: #d18f67;
+}
+
+.navbar a.active::after {
+    opacity: 1;
+}
+
+.sections .section-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    width: 100%;
+    min-height: 70vh;
+    align-content: center;
+    gap: 5%;
+}
+
+/* CARTA */
+.card {
+    min-width: 20vw;
+    min-height: 50vh;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    background-color: #0c1015;
+    margin-bottom: 12px;
+
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: aliceblue;
+    background-color: #0c10159a;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+
+.card section:hover {
+    font-size: 20px;
+    height: 10vh;
+}
+
+
+.title-second {
+    color: #d18f67;
+}
